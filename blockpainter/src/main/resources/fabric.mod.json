@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "blockpainter",
+  "version": "${version}",
+  "name": "Block Painter",
+  "description": "Рисуй текстуры предметов и 3D-воксельные текстуры блоков прямо в игре. Нажми O.",
+  "authors": ["v0"],
+  "license": "MIT",
+  "icon": "assets/blockpainter/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["com.blockpainter.BlockPainterMod"],
+    "client": ["com.blockpainter.client.BlockPainterClient"]
+  },
+  "mixins": ["blockpainter.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.15.0",
+    "fabric-api": "*",
+    "minecraft": "1.20.1",
+    "java": ">=17"
+  }
+}
